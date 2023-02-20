@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header{
+    background-color: rgb(206, 206, 206);
+}
+#content-cbc{
+    display: flex;
+    justify-content: space-around;
+}
+.cakesAnimation{
+    position: absolute;
+}
+.cakesAnimation img{
+    width: 40px;
+    position: relative;
+}
+.cup1{
+    right: 200px;
+    top: 10px;
+}
+.cup2{
+    top: 10px;
+    left: 160px;
+}
+.nav-links1 ul, .nav-links2 ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-links1 li, .nav-links2 li{
+    margin: 15px 0;
+    list-style: none;
+    position: absolute;
+}
+.nav-links1 li:nth-child(1){
+    left: 100px;
+}
+.nav-links2 li:nth-child(1){
+    right: 250px;
+}
+.nav-links1 a, .nav-links2 a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    text-transform:uppercase; 
+}
+/* efeito de linha botton */
+.nav-links1 a::after,
+.nav-links2 a::after{
+    display: block;
+    content: "";
+    border-bottom: 2px solid #ff008e;
+    transform: scaleX(0);
+    transition: transform 450ms ease-in-out;
+}
+.nav-links1 a:hover::after, .nav-links2 a:hover::after{
+    transform: scaleX(1);
+}
+.nav-links1 a:hover, .nav-links2 a:hover{
+    font-size: 1.9vw;
+    color: #ff008e;
+}
+
+
+
+
+
+
+
+
+
+.logoName h3{
+    margin: 10px 0;
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+}
+.logoName span{
+    color: #ff008e;
+}
