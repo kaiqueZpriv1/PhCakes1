@@ -6,12 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,500;1,600;1,700&display=swap");
 /* fonte frase */
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300;1,400&display=swap");
-:root {
-  --font-titulo: "Roboto", sans-serif;
-  --font-paragrafos: "Poppins", sans-serif;
-  --font-lMao: "Cormorant", serif;
-  --font-frase: "Shantell Sans", cursive;
-}
+
 ::-webkit-scrollbar {
   width: 10px;
   /* height: 10px; */
@@ -30,13 +25,20 @@ X ::-webkit-scrollbar-thumb:vertical {
   background-color: #ff008e;
   -webkit-border-radius: 6px;
 }
+:root {
+  --font-titulo: "Roboto", sans-serif;
+  --font-paragrafos: "Poppins", sans-serif;
+  --font-lMao: "Cormorant", serif;
+  --font-frase: "Shantell Sans", cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 header {
-  background-color: rgb(206, 206, 206);
+  background-color: rgba(200, 200, 200, 0.5);
   height: 70px;
 }
 #content-cbc {
@@ -127,11 +129,10 @@ header {
 }
 
 /* MAIN ---------------------------------- */
-main {
+
+body {
   background: url(./assets/bg-main.jpg) no-repeat;
-}
-#page-principal {
-  display: flex;
+  height: 100vh;
 }
 #text-main {
   margin: auto;
@@ -154,15 +155,70 @@ main {
   font-family: var(--font-frase);
   margin: 20px 0;
   font-weight: 300;
+  text-align: center;
   text-shadow: 0 0 2px;
 }
+/* button contatos main */
+
+.main-button {
+  text-align: center;
+  margin: 100px 0 0 0;
+}
+.button-main {
+  background: transparent;
+}
+.button-main a {
+  color: #ff008e;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ff008e;
+  transition: color 0.4s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: #f6f6f6;
+}
+.button-main a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #ff008e;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.button-main a:hover {
+  color: #fff;
+}
+.button-main a::before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.button-main:hover a:before {
+  top: -30px;
+  left: -30px;
+}
+.button-main:active a::before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
 /* img */
 .img-main img {
   width: 450px;
 }
-.container-box {
+#container-bolo,
+#container-pascoa {
   width: 100%;
-  margin: 100px 0;
+  margin: 500px 0;
 }
 /* TEXTO  */
 .txt-type {
@@ -172,7 +228,8 @@ main {
   text-shadow: 0.1em -0.4em #f0a3cd;
 }
 /* CONTAINER - ESTILIZAÇÃO */
-.box-container {
+.box-bolo,
+.box-pascoa {
   margin: 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 250px);
@@ -186,11 +243,13 @@ main {
   text-align: center;
   height: 550px;
   background-color: rgb(248, 244, 244);
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #807e7e;
 }
-
+.box:hover {
+  box-shadow: 0 0 20px #000;
+}
 /* IMAGEM DO BOLO */
-.img-bolo img {
+.ilustracao img {
   width: 250px;
 }
 /* BOX DO TEXTOS ---------------------- */
@@ -198,22 +257,22 @@ main {
   padding: 10px;
 }
 /* TITULOS - NOME DO BOLO ---------------- */
-.titulo-bolo {
+.sabor {
   font-size: 1.5vw;
   font-family: var(--font-lMao);
 }
 /* DESCRIÇÃO DO BOLO ---------------------- */
-.descricao-bolo {
+.descricao {
   font-size: 1vw;
   font-family: var(--font-paragrafos);
   margin: 5px 0;
 }
 /* BOTÃO - LINK DO WPP ---------------------- */
-.button-em a {
+.wpp a {
   text-decoration: none;
 }
 /* ESTILIZAÇÃO E ANIMAÇÃO DO BOTAO WPP ------- */
-.button-em a {
+.wpp a {
   color: #ff008e;
   font-family: inherit;
   display: inline-block;
@@ -230,7 +289,7 @@ main {
   border-radius: 6px;
   font-weight: 500;
 }
-.button-em a::before {
+.wpp a::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -239,19 +298,19 @@ main {
   width: 200px;
   border-radius: 50%;
 }
-.button-em a:hover {
+.wpp a:hover {
   color: #fff;
 }
-.button-em a::before {
+.wpp a::before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
-.button-em:hover a:before {
+.wpp:hover a:before {
   top: -30px;
   left: -30px;
 }
-.button-em:active a::before {
+.wpp:active a::before {
   background: #3a0ca3;
   transition: background 0s;
 }
