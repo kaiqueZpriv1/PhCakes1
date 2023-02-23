@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -29,6 +31,35 @@
             <li><a href="#container-pascoa">Páscoa</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+        </div>
+      </section>
+      <section id="menu-mobile">
+        <div class="menu">
+          <button onclick="menuButton()" class="menu-button">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+        <div id="reveal-menu">
+          <div id="closeLinks" onclick="closeLink()">
+            <i class="ri-close-line"></i>
+          </div>
+          <div class="links-mobile">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#container-bolo">Bolos</a>
+              </li>
+              <li>
+                <a href="#container-pascoa">Páscoa</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+
+          </div>
         </div>
       </section>
     </header>

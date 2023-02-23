@@ -1,3 +1,6 @@
-function toggleMode() {
-    const html = document.documentElement
-    html.classList.toggle("light")}
+function menuButton() {
+  document.getElementById("reveal-menu").style.width = "100%";
+}
+function closeLink() {
+  document.getElementById("reveal-menu").style.width = "0";
+}
