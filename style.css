@@ -315,7 +315,7 @@ header {
   transition: background 0s;
 }
 /* FIM DA ESTILIZAÇÃO DO BOTÃO */
-#menu-mobile{
+#menu-mobile {
   display: none;
 }
 @media (max-width: 360px) {
@@ -326,7 +326,7 @@ header {
     background: none;
     height: 50px;
   }
-  #menu-mobile{
+  #menu-mobile {
     display: block;
   }
   #content-cbc {
