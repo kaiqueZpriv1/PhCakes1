@@ -323,26 +323,33 @@ header {
     background: url(./assets/bg-mobile.jpg) no-repeat;
   }
   header{
+    background: none;
     height: 50px;
   }
   #content-cbc{
+    display: none;
+  }
+  .cakesAnimation{
     display: none;
   }
   /* menu mobile */
   /* botao menu - hamburgue */
   .menu button{
     background: transparent;
+    display: flex;
   }
   /* icone hamburgue */
   .menu-button{
-    font-size: 9vw;
+    font-size: 10vw;
+    color: #000000;
+    margin: 15px;
+    position: fixed;
   }
   /* div de links do menu */
   #reveal-menu{
     width: 0;
     height: 100%;
-    /* background-color: rgb(0,0,0); */
-    background-color: rgb(248, 218, 253, 0.9);
+    background-color: rgb(248, 218, 253);
     z-index: 9;
     position: fixed;
     left: 0;
@@ -353,5 +360,59 @@ header {
   /* close div de links */
   #closeLinks {
     font-size: 9vw;
+  }
+  /* estilizacao dos links mobile */
+  .links-mobile{
+    margin: 100px 0;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+  }
+  .links-mobile a{
+    font-size: 8vw;
+    color: #000;
+    text-decoration: none;
+    font-family: var(--font-titulo);
+  }
+  .links-mobile a:hover{
+    font-size: 9vw;
+    font-weight: 600;
+  }
+  /* main */
+  /* text main */
+  #text-main h1{
+    font-size: 14vw;
+  }
+  #text-main p{
+    font-size: 9vw;
+  }
+  /* button main */
+  .main-button{
+    margin: 70px 0;
+  }
+  /* text bolos e páscoa */
+  .txt-type{
+    font-size: 15vw;
+  }
+  /* box  */
+  .box-bolo,
+  .box-pascoa{
+    display: block;
+    margin: 55px;
+  }
+  .box{
+    margin: 100px 0;
+    font-size: 10vw;
+    height: 640px;
+  }
+  .sabor{
+    font-size: 10vw;
+  }
+  .descricao{
+    font-size: 5vw;
+  }
+  .wpp a{
+    padding: 5px;
+    font-size: 20px;
   }
 }
