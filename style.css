@@ -406,7 +406,10 @@ header {
   .box {
     margin: 100px 0;
     font-size: 10vw;
-    height: 670px;
+    height: 700px;
+  }
+  .ilustracao img {
+    width: 100%;
   }
   .sabor {
     font-size: 10vw;
