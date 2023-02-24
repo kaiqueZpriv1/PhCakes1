@@ -320,7 +320,7 @@ header {
 }
 @media (max-width: 700px) {
   body {
-    background: url(./assets/bg-mobile.jpg) no-repeat;
+    background: url(./assets/bg-700.jpg) no-repeat;
   }
   header {
     background: none;
