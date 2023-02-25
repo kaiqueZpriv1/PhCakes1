@@ -42,71 +42,57 @@ body {
   height: 100vh;
 }
 header {
-  background-color: rgba(200, 200, 200);
+  /* background-color: rgba(200, 200, 200); */
   height: 70px;
+  margin: 20px 0;
 }
 #content-cbc {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px 0;
 }
-.cakesAnimation {
-  position: absolute;
+/* LOGO TYPO */
+.logo{
+  margin: 5px;
 }
-.cakesAnimation img {
-  width: 40px;
-  position: relative;
+.logo h3{
+  color: #f6f6f6;
+  font-size: 1.7vw;
+  font-family: var(--font-lMao);
 }
-.cakesAnimation img:hover {
-  animation: cake 1s linear infinite;
+.logo span{
+  color: #ff008e;
 }
-@keyframes cake {
-  0% {
-    transform: rotateY(0);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-.cup1 {
-  right: 200px;
-  top: 10px;
-}
-.cup2 {
-  top: 10px;
-  left: 160px;
-}
-.nav-links1 ul,
-.nav-links2 ul {
-  display: flex;
-  gap: 20px;
-}
-.nav-links1 li,
-.nav-links2 li {
-  margin: 15px 0;
-  list-style: none;
-  position: absolute;
-}
-.nav-links1 li:nth-child(1) {
-  left: 100px;
-}
-.nav-links2 li:nth-child(1) {
-  right: 250px;
-}
-.nav-links1 a,
-.nav-links2 a {
-  text-decoration: none;
-  font-size: 1.5vw;
-  font-weight: 500;
+.logo p{
+  margin-left: 25px;
   font-family: var(--font-paragrafos);
-  color: #000;
-  position: relative;
+  color: #f6f6f6;
+  font-weight: 500;
+}
+/* LINKS DE ATALHO HEADER */
+.nav-links1{
   display: inline-block;
   text-transform: uppercase;
 }
+.nav-links1 ul {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.nav-links1 li{
+  margin-top: 15px;
+  list-style: none;
+}
+.nav-links1 a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: var(--font-paragrafos);
+
+}
 /* efeito de linha botton */
-.nav-links1 a::after,
-.nav-links2 a::after {
+.nav-links1 a::after{
   display: block;
   content: "";
   border-bottom: 2px solid #ff008e;
@@ -117,20 +103,25 @@ header {
 .nav-links2 a:hover::after {
   transform: scaleX(1);
 }
-.nav-links1 a:hover,
-.nav-links2 a:hover {
-  font-size: 1.7vw;
+.nav-links1 li:hover {
+  transform: scale(1.1);
   color: #ff008e;
+}
+/* BUTTON HEADER CONTATE-ME */
+.button-contate button{
+  padding: 15px;
+  margin: 10px 30px;
+  background-color: #ff008e;
+}
+.button-contate a{
+  text-decoration: none;
+  color: #f6f6f6;
+}
+.button-contate button:hover{
+  transform: scale(1.1);
 }
 
-.logoName h3 {
-  margin: 10px 0;
-  font-size: 2vw;
-  font-family: var(--font-titulo);
-}
-.logoName span {
-  color: #ff008e;
-}
+
 
 /* MAIN ---------------------------------- */
 
@@ -194,8 +185,9 @@ header {
   width: 200px;
   border-radius: 50%;
 }
-.button-main a:hover {
+.button-main a:hover, .wpp a:hover {
   color: #fff;
+  transform: scale(1.1);
 }
 .button-main a::before {
   top: 100%;
@@ -239,6 +231,7 @@ header {
 }
 .box {
   /* width: 400px; */
+  margin-bottom: 10px;
   font-size: 2vw;
   text-align: center;
   height: 550px;
@@ -247,6 +240,7 @@ header {
 }
 .box:hover {
   box-shadow: 0 0 20px #000;
+  transform: scale(1.01)
 }
 /* IMAGEM DO BOLO */
 .ilustracao img {
@@ -277,7 +271,6 @@ header {
   font-family: inherit;
   display: inline-block;
   width: 8em;
-  background: transparent;
   height: 2.6em;
   line-height: 2.5em;
   margin: 20px;
@@ -289,6 +282,7 @@ header {
   font-size: 17px;
   border-radius: 6px;
   font-weight: 500;
+  background: transparent;
 }
 .wpp a::before {
   content: "";
@@ -325,7 +319,6 @@ header {
   }
   header {
     background: none;
-    height: 50px;
   }
   #menu-mobile {
     display: block;
@@ -385,10 +378,10 @@ header {
   /* main */
   /* text main */
   #text-main h1 {
-    font-size: 14vw;
+    font-size: 12vw;
   }
   #text-main p {
-    font-size: 9vw;
+    font-size: 7vw;
   }
   /* button main */
   .main-button {
@@ -413,12 +406,13 @@ header {
     width: 100%;
   }
   .sabor {
-    font-size: 10vw;
+    font-size: 7vw;
   }
   .descricao {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .wpp a {
+    margin: 15px 0;
     padding: 5px;
     font-size: 19px;
     background: transparent;
