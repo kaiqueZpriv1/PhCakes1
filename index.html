@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <section id="content-cbc">
         <div class="logo">
           <h3>Paulo <span>Henrique</span></h3>
@@ -53,7 +53,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main id="main">
       <section id="page-principal">
         <div id="text-main">
           <h1>
@@ -68,7 +68,9 @@
             <a target="_blank" href="https://wa.me/5577998404923">Whatsapp</a>
           </button>
           <button class="button-main">
-            <a target="_blank" href="https://www.instagram.com/confeiteiroooo/">Instagram</a>
+            <a target="_blank" href="https://www.instagram.com/confeiteiroooo/"
+              >Instagram</a
+            >
           </button>
           <button class="button-main">
             <a target="_blank" href="Ph871748@gmail.com">E-mail</a>
@@ -144,9 +146,9 @@
         </div>
       </div>
     </section>
-
     <section id="container-pascoa">
-      <h3 class="txt-type">Páscoa</h3>
+      <h3 class="txt-type">Ovos de 
+        <span class="txt-type2">páscoa</span></h3>
       <div class="box-pascoa">
         <div class="box">
           <div class="ilustracao">
@@ -276,5 +278,51 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container-footer">
+        <section id="contatos">
+          <div class="text-contatos">
+            <h3>Contatos</h3>
+          </div>
+          <div class="links-contactos">
+            <a href="" class="linkRede">
+              <i class="ri-whatsapp-fill"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a href="" class="linkRede">
+              <i class="ri-instagram-fill"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="" class="linkRede">
+              <i class="ri-mail-fill"></i>
+              <span>E-mail</span>
+            </a>
+          </div>
+        </section>
+        <section id="linksConteudo">
+          <div class="Conteudo">
+            <h3>Conteúdo</h3>
+          </div>
+          <div class="links-conteudo">
+            <a href="#header" class="conteudo-footer">
+              <i class="ri-home-4-line"></i>
+              <span>Home</span>
+            </a>
+            <a href="#container-bolo" class="conteudo-footer">
+              <i class="ri-cake-fill"></i>
+              <span>Bolos</span>
+            </a>
+            <a href="#container-pascoa" class="conteudo-footer">
+              <i class="ri-cake-3-fill"></i>
+              <span>Ovos de páscoa</span>
+            </a>
+          </div>
+        </section>
+        <div class="cakes-animation">
+          <img src="./assets/food-animate.png" alt="">
+          <img src="./assets/food-animate.png" alt="">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
