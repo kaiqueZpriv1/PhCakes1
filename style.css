@@ -370,7 +370,7 @@ footer {
 #menu-mobile {
   display: none;
 }
-@media (max-width: 390px) {
+@media (min-width: 390px) {
   body {
     background: url(./assets/bg-700.jpg) no-repeat;
   }
@@ -429,8 +429,7 @@ footer {
     font-family: var(--font-titulo);
   }
   .links-mobile a:hover {
-    font-size: 9vw;
-    font-weight: 600;
+    transform: scale(1.1);
   }
   /* main */
   /* text main */
