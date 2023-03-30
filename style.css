@@ -232,7 +232,7 @@ header {
   justify-content: center;
 }
 .box {
-  /* width: 400px; */
+  max-width: 100%;
   margin-bottom: 10px;
   font-size: 2vw;
   text-align: center;
@@ -370,7 +370,7 @@ footer {
 #menu-mobile {
   display: none;
 }
-@media (min-width: 428px) and (max-width: 768px) {
+@media (min-width: 412px) and (max-width: 768px) {
   body {
     background: url(./assets/bg-700.jpg) no-repeat;
   }
@@ -459,7 +459,7 @@ footer {
   .box {
     margin: 100px 0;
     font-size: 10vw;
-    height: 650px;
+    height: 680px;
   }
   .ilustracao img {
     width: 100%;
