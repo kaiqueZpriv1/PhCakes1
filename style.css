@@ -370,6 +370,7 @@ footer {
 #menu-mobile {
   display: none;
 }
+
 @media (min-width: 428px) and (max-width: 480px) {
   body {
     background: url(./assets/bg-700.jpg) no-repeat;
@@ -602,7 +603,7 @@ footer {
   .box {
     margin: 100px 0;
     font-size: 10vw;
-    height: 700px;
+    height: 685px;
   }
   .ilustracao img {
     width: 100%;
