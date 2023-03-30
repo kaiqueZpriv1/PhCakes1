@@ -470,7 +470,7 @@ footer {
   .descricao {
     font-size: 4vw;
   }
-  .wpp button {
+  .wpp{
     background: transparent;
   }
   .wpp a {
@@ -481,7 +481,7 @@ footer {
   }
   /* CONTATOS */
   footer {
-    height: 50vh;
+    height: 45vh;
   }
   .container-footer {
     display: block;
@@ -624,7 +624,7 @@ footer {
   }
   /* CONTATOS */
   footer {
-    height: 43vh;
+    height: 45vh;
   }
   .container-footer {
     display: block;
