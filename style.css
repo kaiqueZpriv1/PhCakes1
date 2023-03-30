@@ -370,7 +370,7 @@ footer {
 #menu-mobile {
   display: none;
 }
-@media (min-width: 412px) and (max-width: 768px) {
+@media (min-width: 412px) and (max-width: 428px) {
   body {
     background: url(./assets/bg-700.jpg) no-repeat;
   }
@@ -459,7 +459,7 @@ footer {
   .box {
     margin: 100px 0;
     font-size: 10vw;
-    height: 680px;
+    height: 700px;
   }
   .ilustracao img {
     width: 100%;
@@ -470,7 +470,7 @@ footer {
   .descricao {
     font-size: 4vw;
   }
-  .wpp{
+  .wpp {
     background: transparent;
   }
   .wpp a {
